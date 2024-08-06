@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://unpkg.com/fullcalendar@5.10.1/main.min.js'></script>
+    <script src='https://unpkg.com/fullcalendar@5.10.1/locales-all.min.js'></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="tools-container">
+            <h2>Herramientas</h2>
+            <ul>
+                <li><a href="https://outlook.office.com/mail/">OUTLOOK</a></li>
+                <li><a href="https://fiatchrysler.service-now.com/nav_to.do?uri=%2F$pa_dashboard.do">DRIVE
+                <li><a href="https://10.12.60.50/GlobalProvisioningTool/home.jsf">GPT</a></li>
+                <li><a href="https://useraccount.fcagroup.com/self-care/manage-passwords">USER ACCOUNT</a>
+                <li><a href="http://172.18.45.163/#hId-webscanPage">ESCANER HP</a></li>
+                <li><a href="https://hpadsm.fiatgroup.com/PwdManagement.aspx">CLAVES ADMIN</a></li>
+                <li><a href="https://crosscheck.intra.fcagroup.com/syncSearch">ESTADO DEL USUARIO</a></li>
+                <li><a href="https://chatgpt.com/?oai-dm=1">CHAT GPT</a></li>
+                <li><a href="https://mycrm.support.hp.com/pt-BR/">RECLAMOS HP</a></li>
+                <li><a href="../Documentos.lnk">PRUEBA</a></li>
+            </ul>
+        </div>
+        <div class="task-container">
+            <h1>Organizador de Tareas</h1>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Nueva tarea">
+                <button type="submit">Añadir</button>
+            </form>
+            <ul id="task-list"></ul>
+        </div>
+        <div class="datetime-container">
+            <h2>Fecha y Hora Actual</h2>
+            <div id="current-datetime"></div>
+            <h2>Calendario</h2>
+            <div id="calendar"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
